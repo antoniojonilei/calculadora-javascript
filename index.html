@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora JavaScript</title>
+</head>
+<body>  
+    <main id="template">
+        <h1>Calculadora Simples</h1>
+
+        <div id="resultado"></div>
+
+        <div id="teclado"> 
+            <table id="operadores">
+                <!--Operadores-->
+                <tr>
+                    <td colspan="2"><input class="clear" type="button" value="C" onclick="clean()"></td>
+                    <td><input class="oparador" type="button" value="/" onclick="inserir('/')"></td>
+                    <td><input class="oparador" type="button" value="X" onclick="inserir('*')"></td>
+                </tr>
+                <!-- 7, 8, 9 -->
+                <tr>
+                    <td><input class="numeral" type="button" value="7" onclick="inserir('7')"></td>
+                    <td><input class="numeral" type="button" value="8" onclick="inserir('8')"></td>
+                    <td><input class="numeral" type="button" value="9" onclick="inserir('9')"></td>
+                    <td><input class="oparador" type="button" value="-" onclick="inserir('-')"></td>
+                </tr>
+                <!-- 4, 5,6 -->
+                <tr>
+                    <td><input class="numeral" type="button" value="4" onclick="inserir('4')"></td>
+                    <td><input class="numeral" type="button" value="5" onclick="inserir('5')"></td>
+                    <td><input class="numeral" type="button" value="6" onclick="inserir('6')"></td>
+                    <td><input class="oparador" type="button" value="+" onclick="inserir('+')"></td>
+                </tr>
+                <!-- 1, 2, 3 -->
+                <tr>
+                    <td><input class="numeral" type="button" value="1" onclick="inserir('1')"></td>
+                    <td><input class="numeral" type="button" value="2" onclick="inserir('2')"></td>
+                    <td><input class="numeral" type="button" value="3" onclick="inserir('3')"></td>
+                    <td rowspan="2"><input class="igualdade" type="button" value="=" onclick="operar()"></td>
+                </tr>             
+                <!-- 0, ., backspace -->           
+                <tr>
+                    <td><input class="numeral" type="button" value="0" onclick="inserir('0')"></td>
+                    <td><input class="numeral" type="button" value="." onclick="inserir('.')"></td>
+                    <td><input class="numeral" type="button" value="del" onclick="apagar()"></td>
+                </tr>
+                </table>  
+            </div>                
+        </div>        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

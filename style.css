@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+input{
+    font-style: none;
+}
+
+body{
+    background-color: #333A58;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color: white;
+    text-align: center;   
+}
+
+#resultado{
+    display: block;
+    font-size: 1.9em;
+    text-align: right;  
+    font-weight: bold;   
+}
+
+#template{
+    background-color: #20243b;
+    width: 410px;
+    height: 700px;
+    margin: auto;
+    padding-top: 5px;
+}
+
+#teclado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#resultado{
+    background-color: #717694;
+    width: 360px;
+    height: 60px;
+    margin: 10px auto;
+    padding: 40px 20px 0 0;
+}
+
+#operadores{
+    margin: 0 12px;
+}
+
+#operadores input.clear{
+    width: 189px;    
+    color: #FF3764; 
+    font-size: 1.7em; 
+}
+
+#operadores input{
+    width: 92px;
+    height: 92px;
+    font-size: 1.7em;
+    color: white;
+    background-color: #50556E; 
+    color: #FF3764;   
+}
+
+#operadores input.numeral{
+    background-color: #3C3E5D;
+    color: white;
+}
+
+#operadores input.igualdade{
+    height: 189px;    
+    background-color: #FF3764;  
+    color: white; 
+    font-size: 2.5em; 
+}
